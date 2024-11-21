@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    padding: 1rem 4rem;
+    z-index: 100;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#navbarSupportedContent>ul>li:nth-child(n)>a {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+}
+
+#navbarSupportedContent>ul>li:nth-child(n)>a:hover,
+#navbarSupportedContent>ul>li:nth-child(n)>a:active {
+    color: #00BF85;
+}
+
+#navbarSupportedContent>button {
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #00BF85;
+    padding: 0.5rem 1rem;
+}
+
+.mid {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero p {
+    width: 55%;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+
+}
+
+.hero a {
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #00BF85;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.mid .hero a:hover {
+    background-color: #fff;
+}
+
+.about {
+    background-color: #000;
+}
+
+.about .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about .text h6 {
+    letter-spacing: 2px;
+    color: #00bf7f;
+}
+
+.about .text h2 {
+    color: #f7f5f4;
+}
+
+.about .text p {
+    color: #f7f5f4;
+}
+
+.about .text a {
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #00BF85;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #000;
+    transition: all 500ms;
+}
+
+.about .text a:hover {
+    background-color: #0b9b70;
+}
+
+
+.discovery .text a,
+.sign .text a {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+
+}
+
+.discovery .text a:hover,
+.sign .text a:hover {
+    outline: 2px solid #00BF85;
+}
+
+.services {
+    background-color: #000;
+}
+
+.services .one {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.services .one:hover {
+    box-shadow: 2px 2px 5px 4px rgba(255, 255, 255, 0.5);
+}
+
+body>section.text-light.bg-dark>footer>div:nth-child(3)>section>p>button {
+    border: none;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #00BF85;
+    padding: 0.5rem 1rem;
+    color: black;
+}
+
+.footer-links ul li a {
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    border-bottom: 1px solid #fff;
+
+}
+
+#signUp-form {
+    height: fit-content;
+    /* border: 1px solid #000; */
+    border-radius: 7px;
+    padding: 1.5rem 1rem;
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(248, 243, 236);
+    display: none;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1024px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    #navbarSupportedContent>ul {
+        padding-left: 0.8rem;
+
+    }
+
+    #navbarSupportedContent>ul>li:nth-child(n)>a {
+        padding: 0.8rem 0;
+
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hero p {
+        width: 90%;
+    }
+
+    .about .text,
+    .discovery .text,
+    .sign .text {
+        width: 100% !important;
+    }
+
+    .about .img,
+    .discovery .img,
+    .sign .img {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .hero p {
+        width: 100%;
+    }
+}
